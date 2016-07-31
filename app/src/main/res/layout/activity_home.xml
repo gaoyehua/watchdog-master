@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="功能列表"
+            android:gravity="center_horizontal"
+            android:background="#8866ff00"
+            android:textSize="30sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <com.gaoyehua.ui.HomeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机卫士，真64核杀毒引擎，超神速度，打开七次可召唤神龙，辅助杀毒！！！"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+    <GridView
+        android:id="@+id/gv_home_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="15dp"
+        android:layout_marginTop="25dp"
+         >
+
+    </GridView>
+
+
+</LinearLayout>

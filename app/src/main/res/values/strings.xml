@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Watchdog</string>
+    <string name="sample_device_admin_description">Watchdog,remote lock screen</string>
+    <string name="sample_device_admin">Watchdog</string>
+</resources>

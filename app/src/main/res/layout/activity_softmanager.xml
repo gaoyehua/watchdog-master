@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="软件管理"
+        android:textSize="25dp"
+        android:background="#8866ff00"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_softmanager_rom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机可用:145MB"
+            android:gravity="center"
+            android:textSize="18dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_softmanager_sd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SD卡可用:45MB"
+            android:gravity="center"
+            android:textSize="18dp"
+            />
+
+
+    </LinearLayout>
+    <!-- FrameLayout : 在布局文件中控件越往下,显示的时候越在上方 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:id="@+id/lv_softmanager_soft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+        <TextView
+            android:id="@+id/tv_itemsoftmanager_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户程序(4)"
+            android:textSize="20dp"
+            android:background="#888888"
+            android:textColor="#000000"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/bar_drawable"
+            />
+    </FrameLayout>
+
+</LinearLayout>
